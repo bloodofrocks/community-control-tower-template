@@ -15,6 +15,7 @@ The template includes:
 - Developer and Operations CV profile examples
 - Duplicate and suppression controls
 - Approval gates before email, social publishing, or job applications
+- A generic website enquiry form UI in `ui/website-lead-form.html`
 
 ## What this is not
 
@@ -33,6 +34,14 @@ The template includes:
 5. Run `setupDashboard` once and review the authorization prompt.
 6. Add your own CV profile and verified job/lead records.
 7. Keep `DRY_RUN` enabled until every action has been reviewed.
+
+## Website enquiries
+
+The form in `ui/website-lead-form.html` is UI only. Replace
+`YOUR_PRIVATE_APPS_SCRIPT_WEB_APP_URL` with your own private backend endpoint.
+The endpoint should validate and store the enquiry in your own workbook. Never
+put a production spreadsheet ID, private endpoint, API key, or personal lead
+data in this public repository.
 
 ## Safety
 

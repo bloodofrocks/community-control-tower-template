@@ -1,0 +1,22 @@
+<form method="post" action="YOUR_PRIVATE_APPS_SCRIPT_WEB_APP_URL" class="lead-form">
+  <input type="hidden" name="action" value="websiteLead">
+  <input type="hidden" name="sourceUrl" value="">
+  <input name="name" placeholder="Your name" required>
+  <input name="email" type="email" placeholder="Email" required>
+  <input name="company" placeholder="Company">
+  <input name="phone" placeholder="Phone (optional)">
+  <select name="service">
+    <option value="">What do you need?</option>
+    <option>Website development</option>
+    <option>Automation</option>
+    <option>Google Workspace</option>
+    <option>Microsoft 365</option>
+    <option>AI workflow</option>
+    <option>Other</option>
+  </select>
+  <textarea name="message" placeholder="Tell us briefly about your project" required></textarea>
+  <button type="submit">Send enquiry</button>
+</form>
+<script>
+  document.querySelector('.lead-form [name="sourceUrl"]').value = window.location.href;
+</script>
